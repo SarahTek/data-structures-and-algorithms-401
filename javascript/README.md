@@ -5,7 +5,7 @@
 
  Reverse Array whiteboard
 
- ![Reverse Array whiteboard](arrayReverse.jpg)
+ ![Reverse Array whiteboard](./reverse-array/arrayReverse.jpg)
 
 
 ## Approach & Efficiency
