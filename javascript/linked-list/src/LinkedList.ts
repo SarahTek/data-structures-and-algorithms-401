@@ -1,8 +1,10 @@
 import { Collection, display } from "./Collection";
 
+
 export class LinkedList<T> implements Collection<T> {
   // TODO
   start: Node<T> | undefined;
+  
   insert (item: T) {
     const newNode = {
       item: item,
@@ -35,4 +37,8 @@ export class LinkedList<T> implements Collection<T> {
 
     return str;
   }
+}
+interface Node<T> {
+  item: T;
+  next: Node<T> | undefined;
 }

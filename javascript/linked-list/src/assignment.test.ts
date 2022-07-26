@@ -11,6 +11,9 @@ describe("LinkedList", () => {
     list.insert("Pippin");
 
     expect(list.includes("Sam")).toBe(true);
+    expect(list.includes("Frodo")).toBe(true);
+    expect(list.includes("Merry")).toBe(true);
+    expect(list.includes("Pippin")).toBe(true);
     expect(list.includes("Bilbo")).toBe(false);
   });
 
