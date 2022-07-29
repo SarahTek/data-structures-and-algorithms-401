@@ -26,7 +26,7 @@
   <!-- - `'hello'`' is the JavaScript string `'hello'` and no other string. -->
   <!-- - `'hello'|'goodbye'` is either the JavaScript string `'hello'` or the string `'goodbye'`, and no other strings. -->
 
-## Collaborators: Martha and Tony
+## Collaborators: Martha QR,  Tony R. , Luis S. , Zayah P 
 
 # Singly Linked List
 <!-- Short summary or background information -->
