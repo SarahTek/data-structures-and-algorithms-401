@@ -37,7 +37,11 @@ export class LinkedList<T> implements Collection<T> {
 
     return str;
   }
+  append(value: T): void {}
+  insertBefore(needle: T, value: T) {}
+  insertAfter(needle: T, value: T) {}
 }
+
 interface Node<T> {
   item: T;
   next: Node<T> | undefined;
