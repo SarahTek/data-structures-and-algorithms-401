@@ -26,13 +26,12 @@
   <!-- - `'hello'`' is the JavaScript string `'hello'` and no other string. -->
   <!-- - `'hello'|'goodbye'` is either the JavaScript string `'hello'` or the string `'goodbye'`, and no other strings. -->
 
-- Collaborators: Martha and Tony
+## Collaborators: Martha and Tony
 
 # Singly Linked List
 <!-- Short summary or background information -->
 
 ## Challenge
-<!-- Description of the challenge -->
 ### Node
 
 - Create a Node class that has properties for the value stored in the Node, and a pointer to the next Node.
