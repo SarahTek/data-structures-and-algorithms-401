@@ -4,7 +4,7 @@ import { LinkedList } from "./LinkedList";
 describe("LinkedList", () => {
   it("checks if an item is included", () => {
     const list: Collection<string> = new LinkedList<string>();
-
+  
     list.insert("Frodo");
     list.insert("Sam");
     list.insert("Merry");

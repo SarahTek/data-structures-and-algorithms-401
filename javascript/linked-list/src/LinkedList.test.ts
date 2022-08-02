@@ -12,12 +12,9 @@ describe("linked list", () => {
     const linkListNums: Collection<number> = new LinkedList<number>();
 
     linkListNums.insert(27);
-    linkListNums.insert(28);
-    linkListNums.insert(30);
 
     expect(linkListNums).toBeDefined();
     expect(linkListNums.includes(27)).toBe(true);
-    expect(linkListNums.includes(28)).toBe(true);
     expect(linkListNums.includes(45)).toBe(false);
   });
   it("the head property will point to the first node in the linked list", () => {
