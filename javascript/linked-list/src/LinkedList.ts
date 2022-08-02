@@ -51,21 +51,32 @@ export class LinkedList<T> implements Collection<T> {
       tail.next = newNode;
     }
   }
+
   insertBefore(needle: T, value: T) {
     let tracker = this.start;
-    let found = false;
     while (tracker !== undefined) {
-      if (tracker.next?.item === needle && found === false) {
-        found = true;
-        let shiftedNode = tracker.next;
-        const newNode = {
-          item: value,
-          next: shiftedNode,
-        };
-        tracker.next = newNode;
-      }
-      tracker = tracker.next;
+      if (tracker.item === needle ) {
+        let shiftedNode = tracker;
+          const newNode = {
+            item: value,
+            next: shiftedNode,
+          };
+        this.start= newNode;
+          break;
+        }
+
+
+    if (tracker.next?.item === needle ) {
+    let shiftedNode = tracker.next;
+      const newNode = {
+        item: value,
+        next: shiftedNode,
+      };
+    tracker.next = newNode;
+      break;
     }
+    tracker = tracker.next;
+   }
   }
 
   insertAfter(needle: T, value: T) {
@@ -78,6 +89,7 @@ export class LinkedList<T> implements Collection<T> {
           next: shiftedNode,
         };
         tracker.next = newNode;
+        break;
       }
       tracker = tracker.next;
     }
