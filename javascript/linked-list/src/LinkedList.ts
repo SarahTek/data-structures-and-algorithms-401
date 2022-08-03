@@ -94,6 +94,40 @@ export class LinkedList<T> implements Collection<T> {
       tracker = tracker.next;
     }
   }
+
+
+kthFromEnd(k: number) {
+
+ let current = this.start;
+ let size = this.size();
+// edge case here
+// if k is < 0 throw error
+
+  if (k > size || k < 0 ) {
+    throw new Error(
+      "this is error"
+    );
+  }
+
+  // current = this.start;
+  while (k <= size) {
+    let target = size - k;
+    for (let i = 0; i <= target; i++){
+      current = current?.next;
+    }
+   return current?.item;
+  }
+};
+
+  size(): number{
+   let  counter = 0;
+   let current = this.start;
+   while (current != undefined) {
+    current = current.next;
+    counter++;
+  }return counter;
+}
+
 }
 
 interface Node<T> {

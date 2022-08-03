@@ -88,3 +88,17 @@ Write the following methods for the Linked List class:
 <!-- Show how to run your code, and examples of it in action -->
 
 ## Collaborators: Martha QR,  Tony R. , Luis S. , Zayah P 
+
+
+
+# Challenge 07 Summary
+<!-- Description of the challenge -->
+
+## Whiteboard Process
+<!-- Embedded whiteboard image -->
+
+## Approach & Efficiency
+<!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
+
+## Solution
+<!-- Show how to run your code, and examples of it in action -->
