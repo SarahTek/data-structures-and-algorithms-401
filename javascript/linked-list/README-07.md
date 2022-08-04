@@ -7,6 +7,10 @@ Write the following method for the Linked List class:
   - Return the node’s value that is k places from the tail of the linked list.
   - You have access to the Node class and all the properties on the Linked List class as well as the methods created in previous challenges.
 
+## PR for code challenge 07
+
+- [code challenge 07](https://github.com/SarahTek/data-structures-and-algorithms-401/pull/21/commits/f3bffcaa0eef29503f5053a9b6ba13d738566ba5)
+
 ## Whiteboard Process
 <!-- Embedded whiteboard image -->
 
@@ -18,3 +22,4 @@ Write the following method for the Linked List class:
 
 
 ## Collaborators: Tony and Martha
+ 
