@@ -95,4 +95,71 @@ describe("linked list", () => {
       "{ pink } -> { purple } -> { blue } -> NULL"
     );
   });
+
+
+  
+  it("should return 'K' position from the list ", () => {
+    const linkList: Collection<number> = new LinkedList<number>();
+
+     linkList.insert(2);
+     linkList.insert(3);
+     linkList.insert(5);
+
+     expect(linkList.kthFromEnd(3)).toEqual(5);
+  });
+
+  it("should return 'Invalid Number' if k is greater than the list", () => {
+    const linkList: Collection<number> = new LinkedList<number>();
+  
+    linkList.insert(2);
+    linkList.insert(3);
+    linkList.insert(5);
+    linkList.insert(8);
+
+    expect(() => linkList.kthFromEnd(12)).toThrow("this is error");
+  });
+
+  it("Where k and the length of the list are the same", () => {
+    const linkList: Collection<number> = new LinkedList<number>();
+
+    linkList.insert(2);
+    linkList.insert(3);
+    linkList.insert(5);
+    linkList.insert(8);
+
+    expect(linkList.kthFromEnd(4)).toEqual(8);
+  });
+
+  it("should return 'Invalid Number' if k is not a positive integer", () => {
+    const linkList: Collection<number> = new LinkedList<number>();
+    linkList.insert(2);
+    linkList.insert(3);
+    linkList.insert(5);
+    linkList.insert(8);
+
+    expect(() => linkList.kthFromEnd(12)).toThrow("this is error");
+    
+  });
+
+  it("if linked list is of a size 1", () => {
+
+    const linkList: Collection<number> = new LinkedList<number>();
+    linkList.insert(2);
+    expect(linkList.kthFromEnd(1)).toBe(2);
+  });
+
+  it("should return 'Happy path' if k is in the middle of the linked list", () => {
+    const linkList: Collection<number> = new LinkedList<number>();
+
+    linkList.insert(2);
+    linkList.insert(3);
+    linkList.insert(5);
+    linkList.insert(8);
+    linkList.insert(10);
+
+
+    expect(linkList.kthFromEnd(3)).toBe(5);
+
+  });
+
 });
