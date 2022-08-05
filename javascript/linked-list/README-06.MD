@@ -3,6 +3,7 @@
 ## Challenge Summary
 
 ### Feature Tasks
+
 Write the following methods for the Linked List class:
 
 - append
