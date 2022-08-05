@@ -4,11 +4,53 @@ interface Node<T> {
   item: T;
   next: Node<T> | undefined;
 }
-export class LinkedList<T> implements Collection<T> {
+
+
+
+export class LinkedList<T>  {
   // TODO
   start: Node<T> | undefined;
+  tail: Node<T> | undefined;
+    //  static start: any;
 
-  insert(item: T) {
+
+static zip(ll1: LinkedList<any>, ll2: LinkedList<any>): LinkedList<any> {
+    const zipped = new LinkedList<any>();
+    // let x : undefined 
+      let curr1 = ll1.start;
+      let curr2 = ll2.start;
+      
+    //  edge cases
+      if (ll1 == undefined){
+        return ll2;
+      }else if (ll2 == undefined){
+        return ll1;
+      }
+     if ( ll1 == undefined && ll2 == undefined){
+      return zipped;
+     }
+    while (curr1 != undefined || curr2 != undefined) {
+        zipped.append(curr1?.item);
+        zipped.append(curr2?.item);
+        // curr1 = curr1.next;
+        // curr2 = curr2.next;
+      }
+      if (curr1) {
+        while (curr1 != undefined) {
+          zipped.append(curr1?.item);
+          curr1 = curr1.next;
+        }
+      } else if (curr2) {
+        while (curr2 !== undefined) {
+          zipped.append(curr2.item);
+          curr2 = curr2.next;
+        }
+      }
+    return zipped;
+  }
+
+
+insert(item: T) {
     const newNode = {
       item: item,
       next: this.start,
@@ -100,7 +142,7 @@ export class LinkedList<T> implements Collection<T> {
 
 
   kthFromEnd(k: number): any {
-   let current = this.start;
+    let current = this.start;
     let size = this.size();
     // edge case here
     // if k is < 0 throw error
