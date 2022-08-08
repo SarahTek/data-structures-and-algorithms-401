@@ -5,50 +5,11 @@ interface Node<T> {
   next: Node<T> | undefined;
 }
 
-
-
 export class LinkedList<T>  {
   // TODO
   start: Node<T> | undefined;
   tail: Node<T> | undefined;
     //  static start: any;
-
-
-static zip(ll1: LinkedList<any>, ll2: LinkedList<any>): LinkedList<any> {
-    const zipped = new LinkedList<any>();
-    // let x : undefined 
-      let curr1 = ll1.start;
-      let curr2 = ll2.start;
-      
-    //  edge cases
-      if (ll1 == undefined){
-        return ll2;
-      }else if (ll2 == undefined){
-        return ll1;
-      }
-     if ( ll1 == undefined && ll2 == undefined){
-      return zipped;
-     }
-    while (curr1 != undefined || curr2 != undefined) {
-        zipped.append(curr1?.item);
-        zipped.append(curr2?.item);
-        // curr1 = curr1.next;
-        // curr2 = curr2.next;
-      }
-      if (curr1) {
-        while (curr1 != undefined) {
-          zipped.append(curr1?.item);
-          curr1 = curr1.next;
-        }
-      } else if (curr2) {
-        while (curr2 !== undefined) {
-          zipped.append(curr2.item);
-          curr2 = curr2.next;
-        }
-      }
-    return zipped;
-  }
-
 
 insert(item: T) {
     const newNode = {
@@ -73,8 +34,8 @@ insert(item: T) {
     let tracker = this.start;
 
     while (tracker !== undefined) {
-      const strItem = display(tracker.item);
-      str += `{ ${strItem} } -> `;
+      str += `{ ${display(tracker.item)} } -> `;
+      // const strItem = display(tracker.item);
       tracker = tracker.next;
     }
 
@@ -82,6 +43,7 @@ insert(item: T) {
 
     return str;
   }
+
   append(value: T): void {
     const newNode = {
       item: value,
@@ -94,7 +56,7 @@ insert(item: T) {
         tail = tail.next;
       }
       tail.next = newNode;
-    }
+    }else(this.start = newNode);
   }
 
   insertBefore(needle: T, value: T): void {
@@ -171,4 +133,40 @@ insert(item: T) {
       counter++;
     } return counter;
   }
+
+
+  static zip(ll1: LinkedList<any>, ll2: LinkedList<any>): LinkedList<any> {
+    // let x : undefined 
+    let curr1 = ll1.start;
+    let curr2 = ll2.start;
+    
+    //  edge cases
+    if ( curr1 === undefined && curr2 === undefined){
+      throw new Error("This is empty");
+    }
+    if (curr1 === undefined){
+      return ll2;
+    }else if (curr2 === undefined){
+      return ll1;
+    }
+    const zipped = new LinkedList<any>();
+      while (curr1 != undefined && curr2 != undefined) {
+          zipped.append(curr1.item);
+          zipped.append(curr2.item);
+          curr1 = curr1.next;
+          curr2 = curr2.next;
+        }
+        if (curr1 != undefined) {
+          while (curr1 != undefined) {
+            zipped.append(curr1.item);
+            curr1 = curr1.next;
+          }
+        } else if (curr2 != undefined) {
+          while (curr2 != undefined) {
+            zipped.append(curr2.item);
+            curr2 = curr2.next;
+          }
+        }
+      return zipped;
+    }
 }
