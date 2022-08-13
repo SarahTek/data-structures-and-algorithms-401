@@ -6,3 +6,4 @@
 - [code-challenge 05](https://github.com/SarahTek/data-structures-and-algorithms-401/tree/main/javascript/linked-list#readme)
 - [code-challenge 07](https://github.com/SarahTek/data-structures-and-algorithms-401/tree/main/javascript/linked-list#readme)
 - [code-challenge 08](https://github.com/SarahTek/data-structures-and-algorithms-401/blob/main/javascript/linked-list/README-08.md)
+- [stacks and queues](https://github.com/SarahTek/data-structures-and-algorithms-401/blob/main/javascript/stack-and-queue/README.md)
