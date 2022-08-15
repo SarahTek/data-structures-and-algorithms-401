@@ -5,6 +5,24 @@ A stack is useful when we want to add elements inside a list into sequential ord
 - stacks use First In Last Out(FILO) and Queues use the Last In Fist Out (LIFO). So the last element added to a stack is going to be the first one to be removed.And the first thing that you added in is the last thing to be removed.
 - stacks are used to manage function invocation , undo/redo and routing history.
 
+The stack head structure also contains a pointer to top and count of number of entries currently in stack.
+
+- `push()` – Insert an element at one end of the stack called top.
+- `pop()` – Remove and return the element at the top of the stack, if it is not empty.
+- `peek()` – Return the element at the top of the stack without removing it, if the stack is not empty.
+- `size()` – Return the number of elements in the stack.
+- `isEmpty()` – Return true if the stack is empty, otherwise return false.
+- `isFull()` – Return true if the stack is full, otherwise return false.
+
+Queue is a linear data structure in which elements can be inserted only from one side of the list called rear, and the elements can be deleted only from the other side called the front.The queue data structure follows the FIFO (First In First Out) principle, i.e. the element inserted at first in the list, is the first element to be removed from the list.
+
+- `enqueue()` – Insert an element at the end of the queue.
+- `dequeue()` – Remove and return the first element of the queue, if the queue is not empty.
+- `peek()` – Return the element of the queue without removing it, if the queue is not empty.
+- `size()` – Return the number of elements in the queue.
+- `isEmpty()` – Return true if the queue is empty, otherwise return false.
+- `isFull()` – Return true if the queue is full, otherwise return false.
+
 ## Challenge
 
 Using a Linked List as the underlying data storage mechanism, implement both a Stack and a Queue
