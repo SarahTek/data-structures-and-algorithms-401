@@ -2,6 +2,9 @@
 
 A stack is useful when we want to add elements inside a list into sequential order and remove the last element added. A queue is useful when we want the same behavior, but instead of removing the last added element, we want to remove the first element added to the list.
 
+- stacks use First In Last Out(FILO) and Queues use the Last In Fist Out (LIFO). So the last element added to a stack is going to be the first one to be removed.And the first thing that you added in is the last thing to be removed.
+- stacks are used to manage function invocation , undo/redo and routing history.
+
 ## Challenge
 
 Using a Linked List as the underlying data storage mechanism, implement both a Stack and a Queue
