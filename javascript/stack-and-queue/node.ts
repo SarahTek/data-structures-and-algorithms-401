@@ -3,4 +3,6 @@ interface Stack<T> {
   pop(): T | undefined;
   peek(): T | undefined;
   size(): number;
+  enqueue(item: T): void;
+  dequeue(): T | undefined;
 }
