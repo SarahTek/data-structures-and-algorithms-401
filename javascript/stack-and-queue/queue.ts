@@ -8,7 +8,11 @@ export class Queue<T> {
     this.storage.push(item);
   }
   dequeue(): T | undefined {
-    return this.storage.shift();
+    if(this.isEmpty()){
+      throw new Error ('it is empty');
+    }else{
+      return this.storage.shift();
+    }
   }
 
   peek(): T | undefined {
@@ -21,5 +25,4 @@ export class Queue<T> {
   size(): number {
     return this.storage.length;
   }
-  
 }

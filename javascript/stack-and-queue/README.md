@@ -75,6 +75,7 @@ Using a Linked List as the underlying data storage mechanism, implement both a S
 
 ## Approach & Efficiency
 <!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
+- ![whiteboard](Stack-Queue.png)
 
 ## API
 <!-- Description of each method publicly available to your Stack and Queue-->
