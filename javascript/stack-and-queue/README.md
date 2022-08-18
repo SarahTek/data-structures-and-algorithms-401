@@ -79,3 +79,9 @@ Using a Linked List as the underlying data storage mechanism, implement both a S
 
 ## API
 <!-- Description of each method publicly available to your Stack and Queue-->
+
+## Collaborators
+
+- Tony
+- Martha
+- Danny

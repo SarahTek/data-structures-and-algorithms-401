@@ -1,8 +1,13 @@
 export class Queue<T> {
+  
   storage: T[] = [];
 
-  isEmpty(): boolean | undefined{
-    return this.storage === undefined ? true : false;
+  get size(): number {
+    return this.storage.length;
+  }
+
+  isEmpty(): boolean {
+    return this.storage.length === 0 ? true : false;
   } 
   enqueue(item: T): void {
     this.storage.push(item);
@@ -15,14 +20,11 @@ export class Queue<T> {
     }
   }
 
-  peek(): T | undefined {
+  get peek(): T | undefined {
     if (!this.isEmpty()) {
-      return this.storage[this.size() - 1];
+      return this.storage[this.storage.length - 1];
     }else{
      throw new Error('it is empty');
     }
-  }
-  size(): number {
-    return this.storage.length;
   }
 }
