@@ -37,8 +37,6 @@ export class SetOfStacks<T> {
     return this.container[top].peek;
    
   }
-
-  // BONUS QUESTION
   get size(): number {
     return this.container.reduce((c, s) => c + s.size, 0);
   }
