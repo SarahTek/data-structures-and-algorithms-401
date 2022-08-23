@@ -1,4 +1,4 @@
-import { Shelter } from "./shelter.ts";
+import { Shelter } from "./shelter";
 
 describe("Animal Shelter", () => {
   it("gets the next cat", () => {
@@ -20,6 +20,8 @@ describe("Animal Shelter", () => {
     shelter.enqueue("Greylien", "cat");
 
     expect(shelter.dequeue("dog")).toBe("Oliver");
+    // expect(shelter.dequeue("cat")).toBe("Greylien");
+
   });
 
   it("gets the next friend", () => {
