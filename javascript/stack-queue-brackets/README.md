@@ -14,3 +14,6 @@ There are 3 types of brackets:
 ## PR for CC 13
 
 - [stack-queue-brackets](stack-queue-bracket.png)
+
+- Collaborators
+  - David's solution.
