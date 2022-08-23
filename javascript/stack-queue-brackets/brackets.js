@@ -1,15 +1,18 @@
 'use strict';
-isValid = size => {
+isValid = (s) => {
   let stack = [];
-  for (let i = 0; i < size.length; i++) {
+  for (let i = 0; i < s.length; i++) {
     let char = stack[stack.length - 1]
   }
 }
 
-if (size[i] == "(" || size[i] == "{" || size[i] == "[") {
-  stack.push(size[i]);
-} else if ((char == "{" && size[i] == "}") || (char == "[" && size[i] == "]")) {
-  stack.pop();
-} else return false;
+if (s[i] == "(" || s[i] == "{" || s[i] == "[") {
+  stack.push([i]);
 
-return stack.length ? false : true;
+} else if ((char == "{" && s[i] == "}") || (char == "[" && s[i] == "]")) {
+  stack.pop();
+}
+// else {
+//   return false;
+// }
+// return stack.length ? false : true;
