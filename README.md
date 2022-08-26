@@ -8,4 +8,4 @@
 - [code-challenge 08](https://github.com/SarahTek/data-structures-and-algorithms-401/blob/main/javascript/linked-list/README-08.md)
 - [stacks and queues](https://github.com/SarahTek/data-structures-and-algorithms-401/blob/main/javascript/stack-and-queue/README.md)
 - [SetsOfStacks](https://github.com/SarahTek/data-structures-and-algorithms-401/blob/main/javascript/SetOfStacks/README.md)
-- [stack-queue-animalshelter](https://github.com/SarahTek/data-structures-and-algorithms-401/blob/main/javascript/stack-queue-animal-shelter/README.md)
+- [stack-queue-animalshelter](https://github.com/SarahTek/data-structures-and-algorithms-401/pull/52/commits/3ede2c3d20235d143fc2a2e322645bc53ebe3d21)
