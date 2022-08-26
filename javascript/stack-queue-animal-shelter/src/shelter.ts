@@ -5,6 +5,7 @@ interface Animal {
 export class Shelter {
   animalArr: Animal[] = [];
 
+
   enqueue(name: string, type: "cat" | "dog"): void {
     const newAnimal: Animal = {
       name: name,
@@ -35,6 +36,7 @@ export class Shelter {
       return savedAnimal;
     }
     // TODO(you);
+
 
   }
 }
