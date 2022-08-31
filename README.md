@@ -10,3 +10,4 @@
 - [SetsOfStacks](https://github.com/SarahTek/data-structures-and-algorithms-401/blob/main/javascript/SetOfStacks/README.md)
 - [stack-queue-animalshelter](https://github.com/SarahTek/data-structures-and-algorithms-401/blob/main/javascript/stack-queue-animal-shelter/README.md)
 - [stack-queue-brackets](https://github.com/SarahTek/data-structures-and-algorithms-401/blob/main/javascript/stack-queue-brackets/README.md)
+- [Trees](https://github.com/SarahTek/data-structures-and-algorithms-401/blob/main/javascript/Trees/README.md)
