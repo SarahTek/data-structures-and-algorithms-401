@@ -65,6 +65,23 @@ class Node {
     }
     return traversal;
   }
+
+  max() {
+    let traversal = [];
+    traversal.push(this.value); // Root
+    // Right
+    if (this.right) {
+      let rightTraversal = this.right.postOrder();
+      traversal = [...rightTraversal, ...traversal];
+    }
+    if (this.left) {
+      // Left
+      let leftTraversal = this.left.postOrder();
+      traversal = [...leftTraversal, ...traversal];
+    }
+    return Math.max(...traversal);
+
+  }
 }
 
 
