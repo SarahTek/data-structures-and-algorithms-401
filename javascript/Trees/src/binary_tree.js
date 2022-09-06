@@ -67,6 +67,24 @@ class Node {
     return traversal;
   }
 
+
+  max() {
+    let traversal = [];
+    traversal.push(this.value); // Root
+    // Right
+    if (this.right) {
+      let rightTraversal = this.right.postOrder();
+      traversal = [...rightTraversal, ...traversal];
+    }
+    if (this.left) {
+      // Left
+      let leftTraversal = this.left.postOrder();
+      traversal = [...leftTraversal, ...traversal];
+    }
+    return Math.max(...traversal);
+
+  }
+
   // another solution for postOrder
   // let traversal = [];
   // const traverse = node => {
@@ -79,6 +97,7 @@ class Node {
 //  traverse.push(this.value);
 //  return traverse;
   
+
 }
 
 
@@ -100,41 +119,3 @@ module.exports = { Node };
 
 
 
-// function preOrder(root) {
-//   // Root, Left, Right
-//   // Return a single array
-//   let traversal = [];
-//   traversal.push(root.value); // Root
-
-//   if (root.left) {
-//     // Left
-//     let leftTraversal = preOrder(root.left);
-//     traversal = traversal.concat(leftTraversal);
-//   }
-
-//   // Right
-//   if (root.right) {
-//     let rightTraversal = preOrder(root.right);
-//     traversal = traversal.concat(rightTraversal);
-//   }
-
-//   return traversal;
-// }
-
-// class BinaryTree {
-//   constructor(root) {
-//     this.root = root;
-//   }
-
-//   preOrder() {
-//     // return this.root.preOrder();
-//     return preOrder(this.root);
-//   }
-//   inOrder() { }
-//   postOrder() { }
-// }
-
-
-
-// const preOrderOneLine = (root) =>
-//   root ? [root.value, ...preOrder(root.left), ...preOrder(root.right)] : [];
