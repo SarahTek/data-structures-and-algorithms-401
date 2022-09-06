@@ -8,6 +8,7 @@ describe("Binary Search Tree", () => {
 
   it("adds & maintains items in order", () => {
     expect(tree.inOrder()).toEqual([1, 2, 3, 5, 6, 7, 9, 11]);
+
   });
 
   it("looks up whether an item is in the tree", () => {

@@ -44,7 +44,7 @@ Depth First Traversals:
 - in order(Left, Root, Right)
 - post order(Left, Right, Root)
 
-## [PR](https://github.com/SarahTek/data-structures-and-algorithms-401/pull/56/commits/83c7a12fdfd6bc761e14decdf20763f043b55d73)
+## [PR](https://github.com/SarahTek/data-structures-and-algorithms-401/pull/60)
 
 ## Structure and Testing
 
