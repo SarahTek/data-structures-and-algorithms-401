@@ -52,19 +52,33 @@ class Node {
   postOrder() {
     // left right  root
     let traversal = [];
-    traversal.push(this.value); // Root
+    // Root
+    traversal.push(this.value); 
     // Right
     if (this.right) {
       let rightTraversal = this.right.postOrder();
       traversal = [...rightTraversal, ...traversal];
     }
+    // Left
     if (this.left) {
-      // Left
       let leftTraversal = this.left.postOrder();
       traversal = [...leftTraversal, ...traversal];
     }
     return traversal;
   }
+
+  // another solution for postOrder
+  // let traversal = [];
+  // const traverse = node => {
+ // traverse.push(this.value);
+ // if left child exists , go left again
+ // if (this.left) traverse(this.left);
+ // if right child exists , go right again
+ // if (this.right) traverse(this.right);
+ // } 
+//  traverse.push(this.value);
+//  return traverse;
+  
 }
 
 
@@ -74,7 +88,7 @@ module.exports = { Node };
 
 
 
-// module.exports = { Node, BinaryTree };
+
 
 
 
