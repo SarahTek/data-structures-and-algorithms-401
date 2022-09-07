@@ -85,6 +85,24 @@ class Node {
 
   }
 
+  bfs() {
+    let result = [];
+    const queue = [];
+    queue.push(this.root);
+    while (queue.length > 0) {
+      let currentNode = queue.shift();
+      result.push(currentNode.value);
+      if (currentNode.left) {
+        queue.push(currentNode.left);
+      }
+      if (currentNode.right) {
+        queue.push(currentNode.right);
+      }
+    }
+    return result;
+  }
+
+
   // another solution for postOrder
   // let traversal = [];
   // const traverse = node => {
@@ -102,20 +120,4 @@ class Node {
 
 
 module.exports = { Node };
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
