@@ -82,62 +82,23 @@ class Node {
     return Math.max(...traversal);
 
   }
+  bfs() {
+    let result = [];
+    const queue = [];
+    queue.push(this.root);
+    while (queue.length > 0) {
+      let currentNode = queue.shift();
+      result.push(currentNode.value);
+      if (currentNode.left) {
+        queue.push(currentNode.left);
+      }
+      if (currentNode.right) {
+        queue.push(currentNode.right);
+      }
+    }
+    return result;
+  }
 }
 
 
 module.exports = { Node };
-
-
-
-
-
-// module.exports = { Node, BinaryTree };
-
-
-
-
-
-
-
-
-
-
-
-// function preOrder(root) {
-//   // Root, Left, Right
-//   // Return a single array
-//   let traversal = [];
-//   traversal.push(root.value); // Root
-
-//   if (root.left) {
-//     // Left
-//     let leftTraversal = preOrder(root.left);
-//     traversal = traversal.concat(leftTraversal);
-//   }
-
-//   // Right
-//   if (root.right) {
-//     let rightTraversal = preOrder(root.right);
-//     traversal = traversal.concat(rightTraversal);
-//   }
-
-//   return traversal;
-// }
-
-// class BinaryTree {
-//   constructor(root) {
-//     this.root = root;
-//   }
-
-//   preOrder() {
-//     // return this.root.preOrder();
-//     return preOrder(this.root);
-//   }
-//   inOrder() { }
-//   postOrder() { }
-// }
-
-
-
-// const preOrderOneLine = (root) =>
-//   root ? [root.value, ...preOrder(root.left), ...preOrder(root.right)] : [];
