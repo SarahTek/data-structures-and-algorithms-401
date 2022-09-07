@@ -1,7 +1,7 @@
 const { BinarySearchTree } = require("../binary_search_tree");
 
-describe.skip("Binary Search Tree", () => {
-  const tree = BinarySearchTree();
+describe("Binary Search Tree", () => {
+  const tree = new BinarySearchTree();
   for (const i of [2, 3, 11, 6, 9, 7, 5, 1]) {
     tree.add(i);
   }
