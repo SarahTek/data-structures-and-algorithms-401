@@ -37,3 +37,7 @@ Find the maximum value stored in the tree. You can assume that the values stored
   }
 
 ```
+## Collaborators
+
+- Danny
+- Martha

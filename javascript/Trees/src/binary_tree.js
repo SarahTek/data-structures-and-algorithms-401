@@ -102,5 +102,26 @@ class Node {
   }
 }
 
+class BinaryTree {
+  constructor(root) {
+    this.root = root;
+  }
 
-module.exports = { Node };
+  preOrder() {
+    return this.root.preOrder();
+  }
+  postOrder() {
+    return this.root.postOrder();
+  }
+  inOrder() {
+    return this.root.inOrder();
+  }
+  max() {
+    return this.root.max();
+  }
+
+}
+
+
+
+module.exports = { Node, BinaryTree };
