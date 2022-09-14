@@ -53,7 +53,7 @@ class Node {
     // left right  root
     let traversal = [];
     // Root
-    traversal.push(this.value); 
+    traversal.push(this.value);
     // Right
     if (this.right) {
       let rightTraversal = this.right.postOrder();
@@ -84,7 +84,6 @@ class Node {
     return Math.max(...traversal);
 
   }
-
   bfs() {
     let result = [];
     const queue = [];
@@ -101,23 +100,28 @@ class Node {
     }
     return result;
   }
+}
 
+class BinaryTree {
+  constructor(root) {
+    this.root = root;
+  }
 
-  // another solution for postOrder
-  // let traversal = [];
-  // const traverse = node => {
- // traverse.push(this.value);
- // if left child exists , go left again
- // if (this.left) traverse(this.left);
- // if right child exists , go right again
- // if (this.right) traverse(this.right);
- // } 
-//  traverse.push(this.value);
-//  return traverse;
-  
+  preOrder() {
+    return this.root.preOrder();
+  }
+  postOrder() {
+    return this.root.postOrder();
+  }
+  inOrder() {
+    return this.root.inOrder();
+  }
+  max() {
+    return this.root.max();
+  }
 
 }
 
 
-module.exports = { Node };
 
+module.exports = { Node, BinaryTree };

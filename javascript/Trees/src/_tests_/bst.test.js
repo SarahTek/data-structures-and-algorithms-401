@@ -4,6 +4,7 @@ describe("Binary Search Tree", () => {
   const tree = new BinarySearchTree();
   for (const i of [2, 3, 11, 6, 9, 7, 5, 1]) {
     tree.add(i);
+    // tree.bfs(i)
   }
 
   it("adds & maintains items in order", () => {

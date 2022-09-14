@@ -1,15 +1,14 @@
 // const { BinaryTree, Node } = require("./binary_tree.js");
-const {  BinaryTree, Node } = require("../binary_tree");
+const { BinaryTree, Node } = require("../binary_tree");
 
 describe("Binary Tree", () => {
+  const tree = new BinaryTree(
+    new Node(
 
-  //  const tree = new BinaryTree(
-   const tree = new Node(
-
-    1,
-    new Node(7, new Node(2), new Node(6, new Node(3), new Node(11))),
-    new Node(9, undefined, new Node(9, new Node(5)))
-
+      1,
+      new Node(7, new Node(2), new Node(6, new Node(3), new Node(11))),
+      new Node(9, undefined, new Node(9, new Node(5)))
+    )
   );
   const Maxtree = new Node(
 
@@ -18,6 +17,17 @@ describe("Binary Tree", () => {
     new Node(9, undefined, new Node(16, new Node(5)))
 
   );
+
+  const breadthFirst = new Node(
+
+    1,
+    new Node(1, new Node(2, new Node(3, new Node(4), new Node(5))),
+      new Node(6, undefined, new Node(7, new Node(8, new Node(9))))
+
+    )
+  );
+
+
 
   //          1
   //        /   \
@@ -43,6 +53,11 @@ describe("Binary Tree", () => {
   });
   it("finds the maximum value traversal (root, left, right)", () => {
     expect(Maxtree.max()).toEqual(30);
+
+  });
+  it('checks if the tree is empty', () => {
+    const tree = new BinaryTree();
+    expect(tree).toBeDefined();
 
   });
 });
