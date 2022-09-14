@@ -7,6 +7,11 @@ Write a function called `breadth first`
 
 NOTE: Traverse the input tree using a Breadth-first approach
 
+
+## UML for  Breadth-first
+
+![Breadth-first ](BSF1.png)
+![Breadth-first visual](bfsExample.png)
 ## Solution 
 
 ```
@@ -27,3 +32,4 @@ bfs() {
     return result;
   }
   ```
+- 
