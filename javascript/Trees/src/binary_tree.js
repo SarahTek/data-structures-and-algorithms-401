@@ -1,6 +1,3 @@
-//Pre-order: root >> left >> right
-// In - order: left >> root >> right
-// Post - order: left >> right >> root
 
 class Node {
   constructor(value, left, right) {
@@ -83,22 +80,6 @@ class Node {
     }
     return Math.max(...traversal);
 
-  }
-  bfs() {
-    let result = [];
-    const queue = [];
-    queue.push(this.root);
-    while (queue.length > 0) {
-      let currentNode = queue.shift();
-      result.push(currentNode.value);
-      if (currentNode.left) {
-        queue.push(currentNode.left);
-      }
-      if (currentNode.right) {
-        queue.push(currentNode.right);
-      }
-    }
-    return result;
   }
 }
 
