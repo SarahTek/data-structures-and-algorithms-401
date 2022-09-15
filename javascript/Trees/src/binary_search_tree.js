@@ -3,7 +3,9 @@
 //  - Argument: value
 //  - Returns: boolean indicating whether or not the value is in the tree at least once.
 
-const { Node, BinaryTree } = require('./binary_tree.js');
+const BinaryTree = require('./binary_tree.js');
+const Node = require("./node");
+
 
 class BinarySearchTree extends BinaryTree {
   add(number) {
@@ -86,4 +88,4 @@ class BinarySearchTree extends BinaryTree {
 }
 
 
-module.exports = { BinarySearchTree };
+module.exports = { BinarySearchTree, Node };
