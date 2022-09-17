@@ -14,3 +14,5 @@ Determine whether or not the value of each node is divisible by `3, 5 or both`. 
 
 ## Wireframe
 ![FizzBuzz](FizzBuzz.png)
+
+## [PR](https://github.com/SarahTek/data-structures-and-algorithms-401/pull/69)
