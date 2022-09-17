@@ -43,6 +43,7 @@ describe('Binary Tree Breadth-First-Search', () => {
     n3.right = n7;
 
     expect(breadthFirstSearch(tree)).toEqual([1, 2, 3, 4, 5, 6, 7]);
+
   });
 
   it('does a breadth-first-search and prints nodes with string values', () => {
