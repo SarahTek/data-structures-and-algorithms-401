@@ -1,8 +1,21 @@
 # Insertion-Sort
 
-Review the pseudocode below, then trace the algorithm by stepping through the process with the provided sample array. Document your explanation by creating a blog article that shows the step-by-step output after each iteration through some sort of visual.
+Sorting refers to arranging items of a list in a specific order (numerical or alphabetic). Sorting is generally used in tandem with searching.
 
-Once you are done with your article, code a working, tested implementation of Insertion Sort based on the pseudocode provided.
+It is generally easier to search for an element (called the key) in a given list if the list is sorted, both visually and algorithmically.
+
+There are many ways (algorithms) to sort a given list of elements. Merge Sort is one of the more popular, and more efficient ways to do so.
+
+### Understanding the Logic Behind Merge Sort
+
+Merge sort uses the concept of divide-and-conquer to sort the given list of elements. It breaks down the problem into smaller subproblems until they become simple enough to solve directly.
+
+Here are the steps Merge Sort takes:
+
+- Split the given list into two halves (roughly equal halves in case of a list with an odd number of elements).
+- Continue dividing the subarrays in the same manner until you are left with only single element arrays.
+- Starting with the single element arrays, merge the subarrays so that each merged subarray is sorted.
+
 ## Pseudocode
 
 ```
