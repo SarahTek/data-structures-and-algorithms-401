@@ -11,4 +11,5 @@
 - [stack-queue-animalshelter](https://github.com/SarahTek/data-structures-and-algorithms-401/blob/main/javascript/stack-queue-animal-shelter/README.md)
 - [stack-queue-brackets](https://github.com/SarahTek/data-structures-and-algorithms-401/blob/main/javascript/stack-queue-brackets/README.md)
 - [Trees](https://github.com/SarahTek/data-structures-and-algorithms-401/blob/main/javascript/Trees/README.md)
-- [Insertion-Sort](https://github.com/SarahTek/data-structures-and-algorithms-401/tree/main/javascript/sorting/Insertion)
+- [Insertion-Sort](https://github.com/SarahTek/data-structures-and-algorithms-401/blob/main/javascript/sorting/Insertion/README.md)
+- [Merge-Sort](https://github.com/SarahTek/data-structures-and-algorithms-401/blob/main/javascript/merge-sort/README-27.md)
