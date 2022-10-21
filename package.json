@@ -18,5 +18,8 @@
   "homepage": "https://github.com/SarahTek/data-structures-and-algorithms-401#readme",
   "dependencies": {
     "jest": "^29.1.2"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.2.0"
   }
 }
