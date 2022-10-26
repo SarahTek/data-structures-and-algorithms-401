@@ -14,3 +14,4 @@
 - [Insertion-Sort](https://github.com/SarahTek/data-structures-and-algorithms-401/blob/main/javascript/sorting/Insertion/README.md)
 - [Merge-Sort](https://github.com/SarahTek/data-structures-and-algorithms-401/blob/main/javascript/merge-sort/README-27.md)
 - [sort-and-filter-movies](https://github.com/SarahTek/data-structures-and-algorithms-401/blob/main/javascript/sort-and-filter-movies/README-28.md)
+- [tree-intersection](https://github.com/SarahTek/data-structures-and-algorithms-401/blob/main/javascript/tree-intersection/Readme.md)
