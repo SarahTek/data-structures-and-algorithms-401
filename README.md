@@ -15,3 +15,5 @@
 - [Merge-Sort](https://github.com/SarahTek/data-structures-and-algorithms-401/blob/main/javascript/merge-sort/README-27.md)
 - [sort-and-filter-movies](https://github.com/SarahTek/data-structures-and-algorithms-401/blob/main/javascript/sort-and-filter-movies/README-28.md)
 - [hashmap-repeated-word](https://github.com/SarahTek/data-structures-and-algorithms-401/blob/main/javascript/repeatedWord/Readme.md)
+- [tree-intersection](https://github.com/SarahTek/data-structures-and-algorithms-401/blob/main/tree-intersection/Readme.md)
+
