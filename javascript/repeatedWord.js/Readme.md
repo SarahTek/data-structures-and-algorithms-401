@@ -23,3 +23,5 @@ const repeatedWord = (string) => {
 
 module.exports = repeatedWord;
 ```
+
+[PR](https://github.com/SarahTek/data-structures-and-algorithms-401/pull/81)
