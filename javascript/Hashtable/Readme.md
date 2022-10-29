@@ -28,3 +28,5 @@ Implement a Hashtable Class with the following methods:
 
 - Arguments: key
 - Returns: Index in the collection for that key
+
+[PR](https://github.com/SarahTek/data-structures-and-algorithms-401/pull/84)
