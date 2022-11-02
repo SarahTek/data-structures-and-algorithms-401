@@ -30,3 +30,9 @@ Implement a Hashtable Class with the following methods:
 - Returns: Index in the collection for that key
 
 [PR](https://github.com/SarahTek/data-structures-and-algorithms-401/pull/84)
+
+## Collaborators
+
+- Tony
+- Danny
+- Martha
