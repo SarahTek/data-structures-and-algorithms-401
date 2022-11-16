@@ -1,17 +1,7 @@
-'use strict';
+const Edge = require('./edge');
+const Node = require('./node');
 
-class Node {
-  constructor(value) {
-    this.value = value;
-  }
-}
 
-class Edge {
-  constructor(node, weight) {
-    this.node = node;
-    this.weight = weight;
-  }
-}
 
 class Graph {
   constructor() {
@@ -40,8 +30,28 @@ class Graph {
   size() {
     return this.neighborList.size;
   }
+
+
+  breadthFirst(node) {
+    const q = [];
+    const visited = new Set();
+    const traversal = [];
+
+    let next = q.shift();
+    visited.add(next);
+
+    while (next !== undefined) {
+      if (!visited.has(next)) {
+        traversal.push(next.value);
+        q.push(...node.getNeighbors(next));
+      }
+      next = q.shift();
+    }
+    return traversal;
+  }
 }
+
 
 module.exports = {
   Graph,
-}
+};
