@@ -17,5 +17,5 @@
 - [hashtable](https://github.com/SarahTek/data-structures-and-algorithms-401/blob/main/javascript/Hashtable/Readme.md)
 - [hashmap-repeated-word](https://github.com/SarahTek/data-structures-and-algorithms-401/blob/main/javascript/repeatedWord/Readme.md)
 - [tree-intersection](https://github.com/SarahTek/data-structures-and-algorithms-401/blob/main/tree-intersection/Readme.md)
-- [Graph](https://github.com/SarahTek/data-structures-and-algorithms-401/blob/main/javascript/Graph/Readme.md)
+- [Graph](https://github.com/SarahTek/data-structures-and-algorithms-401/blob/main/javascript/Graph/Graph.md)
 - [Graph-BFS](https://github.com/SarahTek/data-structures-and-algorithms-401/blob/main/javascript/Graph/BFS.md)
