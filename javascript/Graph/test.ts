@@ -1,3 +1,4 @@
+// THE WARM UP IS AT THE BOTTOM OF THE PAGE
 export { };
 
 interface Node<NV, EV> {
@@ -38,8 +39,6 @@ class Graph<NV, EV> {
   }
 }
 
-
-
 function breadthFirst<NV, EV>(graph: Graph<NV, EV>, start: Node<NV, EV>): NV[] {
   const q = [start];
   const visited = new Set<Node<NV, EV>>();
@@ -65,11 +64,11 @@ const narnia = graph.addNode("Narnia");
 const naboo = graph.addNode("Naboo");
 
 graph.addEdge(pandora, arendelle, undefined);
-graph.addEdge(arendelle, monstropolis, undefined);
 graph.addEdge(arendelle, metroville, undefined);
+graph.addEdge(arendelle, monstropolis, undefined);
 graph.addEdge(metroville, monstropolis, undefined);
-graph.addEdge(metroville, narnia, undefined);
 graph.addEdge(metroville, naboo, undefined);
+graph.addEdge(metroville, narnia, undefined);
 graph.addEdge(monstropolis, naboo, undefined);
 graph.addEdge(narnia, naboo, undefined);
 // Bi-directional edges
@@ -83,38 +82,30 @@ graph.addEdge(naboo, monstropolis, undefined);
 graph.addEdge(naboo, narnia, undefined);
 
 test("breadth first", () => {
-  // const traversal = breadthFirst(graph, metroville);
-  const traversal = depthFirst(graph, naboo);
-  console.log(traversal);
-  // expect(traversal).toEqual([
-  //   "Pandora",
-  //   "Arendelle",
-  //   "Metroville",
-  //   "Monstropolis",
-  //   "Narnia",
-  //   "Naboo",
-  // ]);
+  const traversal = breadthFirst(graph, pandora);
+
+  // FIRST: Fix this test, WITHOUT changing the test!
+  // (Hint: change the order of the addEdge calls. Why?)
+
+  expect(traversal).toEqual([
+    "Pandora",
+    "Arendelle",
+    "Metroville",
+    "Monstropolis",
+    "Narnia",
+    "Naboo",
+  ]);
 });
 
 // The above breadth first was class 35's assignment.
 // Today's warm up is depth first.
+// FIRST! First the above test.
+// Second, implement this method.
 function depthFirst<NV, EV>(graph: Graph<NV, EV>, start: Node<NV, EV>): NV[] {
-  const s = [start];
-  const visited = new Set<Node<NV, EV>>();
-  const traversal: NV[] = [];
-  let next = s.pop();
-  while (next !== undefined) {
-    if (!visited.has(next)) {
-      visited.add(next);
-      traversal.push(next.value);
-      s.push(...graph.neighbors(next));
-    }
-    next = s.pop();
-  }
-  return traversal;
+  return [];
 }
 
-test.skip("depth first", () => {
+test("depth first", () => {
   const traversal = depthFirst(graph, pandora);
   expect(traversal).toEqual([
     "Pandora",
