@@ -9,3 +9,12 @@ Defining the input type of the can_solve function is part of this challenge.
 function can_solve(???) {
   return ???;
 }
+
+
+## ![UML](./maze.png)
+
+## [PR](https://github.com/SarahTek/data-structures-and-algorithms-401/pull/96)
+
+## Collaborator
+
+- Tony
