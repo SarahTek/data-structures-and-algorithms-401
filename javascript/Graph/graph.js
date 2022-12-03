@@ -1,57 +1,65 @@
 const Edge = require('./edge');
-const Node = require('./node');
-
-
 
 class Graph {
   constructor() {
-    this.neighborList = new Map();
+    this.adjacencyList = new Map();
+    // this.adjacencyList = {};
   }
 
-  addNode(value) {
-    const node = new Node(value);
-    this.neighborList.set(node, []);
+  addNode(node) {
+    let arr = new Array();
+    this.adjacencyList.set(node.value, arr);
     return node;
   }
 
-  addEdge(start, end, weight) {
-    const neighbors = this.neighborList.get(start);
-    neighbors.push(new Edge(end, weight));
-  }
-
-  getNeighbors(node) {
-    return [...this.neighborList.get(node)];
+  addEdge(start, end, weight = 0) {
+    let edge = new Edge(end, weight);
+    const neighbors = this.adjacencyList.get(start.value);
+    neighbors.push(edge);
   }
 
   getNodes() {
-    return this.neighborList;
+    const nodes = [];
+    for (const key of this.adjacencyList.keys()) {
+      nodes.push(key);
+    }
+    return nodes;
+  }
+
+  getNeighbors(node) {
+    return this.adjacencyList.get(node.value);
+  }
+
+  getNeighborsForBusinessTrip(node) {
+    return this.adjacencyList.get(node);
+  }
+
+
+  breadthFirstSearch(node) {
+    const results = [];
+    const queue = [];
+    const visited = new Set();
+
+    visited.add(node.value);
+    queue.push(node);
+
+    while (queue.length > 0) {
+      let front = queue.shift();
+      results.push(front.value);
+      let neighbors = this.getNeighbors(front);
+      for (const item in neighbors) {
+        if (!visited.has(neighbors[item].node)) {
+          queue.push(neighbors[item].node);
+          visited.add(neighbors[item].node);
+        }
+      }
+    }
+    return results;
   }
 
   size() {
-    return this.neighborList.size;
-  }
-
-
-  breadthFirst(node) {
-    const q = [];
-    const visited = new Set();
-    const traversal = [];
-
-    let next = q.shift();
-    visited.add(next);
-
-    while (next !== undefined) {
-      if (!visited.has(next)) {
-        traversal.push(next.value);
-        q.push(...node.getNeighbors(next));
-      }
-      next = q.shift();
-    }
-    return traversal;
+    return this.adjacencyList.size;
   }
 }
 
-
-module.exports = {
-  Graph,
-};
+module.exports = Graph;
